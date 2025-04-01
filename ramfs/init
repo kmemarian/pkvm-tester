@@ -56,6 +56,7 @@ fi
 
 up "inits"
 
+echo "Kernel version: `uname -r`"
 echo -e "\n\e[1mStarting pKVM tester.\e[0m\n"
 
 cd payload

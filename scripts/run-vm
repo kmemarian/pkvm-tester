@@ -50,6 +50,7 @@ append=(
   nokaslr   # Disable address space layout randomization.
   quiet     # Suppress kernel outputs.
   kvm-arm.mode=protected  # pKVM.
+  kvm-arm.protected_modules="pkvm_pl011" # pKVM serial module (since android15-6.6)
 )
 
 arguments=($params --append "$append" $@)
